@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration> 
+	
+	 <!-- settings元素：用来配置当前应用程序的一些优化项 -->
+	 <settings>
+	 	<!-- 开启二级缓存 -->
+	 	<setting name="cacheEnabled" value="true"/>
+	 </settings>
+	 <!-- typeAliases元素：用来设置类别名 -->
+	 <typeAliases>
+	 	<!-- typeAlias元素：给某一类起别名
+	 		type属性：要起名的类的全类名
+	 		alias属性：别名
+	 		内置类别名：
+	 			int long char boolean...
+	 			String list map set
+	 	 -->
+	 	<!-- <typeAlias type="mybatis.bean.UserInfo" alias="UserInfo"/> -->
+	 	<!-- 给一个包下所有类统一取别名  name是包的路径  默认给每一个类起的别名就是类名 -->
+	 	<package name="com.neuedu.model.bean"/>
+	 </typeAliases>
+	 
+	 
+	 
+	 
+</configuration>  
+
+
+
+
